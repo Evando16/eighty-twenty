@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "component-test":"ng test --ts-config=src/tsconfig.spec.component.json --main=src/test.component.ts"
   },
   "private": true,
   "dependencies": {
