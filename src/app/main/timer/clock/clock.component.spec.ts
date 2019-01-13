@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ClockComponent } from './clock.component';
+import { FormsModule } from '@angular/forms';
+import { NgbModule, NgbTimepickerModule } from '@ng-bootstrap/ng-bootstrap';
+import { TimeSecondsFormatPipe } from 'src/app/shared/pipes/time-seconds-format/time-seconds-format.pipe';
 
 describe('ClockComponent', () => {
   let component: ClockComponent;
@@ -8,9 +11,17 @@ describe('ClockComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ClockComponent ]
+      declarations: [
+        ClockComponent,
+        TimeSecondsFormatPipe
+      ],
+      imports: [
+        FormsModule,
+        NgbModule.forRoot(),
+        NgbTimepickerModule,
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
