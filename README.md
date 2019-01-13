@@ -23,4 +23,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Running Component Tests
-Run `ng comp-test` to execute the Component Tests 
+Run `npm run component-test` to execute the Component Tests. This comand is a custon `ng test` comand that sets up *ts-config* file to **tsconfig.spec.component.json** and *main* file to **test.component.ts**
