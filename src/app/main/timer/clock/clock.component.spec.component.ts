@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule, NgbTimepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { TimeSecondsFormatPipe } from 'src/app/shared/pipes/time-seconds-format/time-seconds-format.pipe';
 
+import {} from 'jasmine';
+
 describe('ClockComponent - Component Tests', () => {
   let component: ClockComponent;
   let compiled: any;
