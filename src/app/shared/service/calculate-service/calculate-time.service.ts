@@ -30,7 +30,7 @@ export class CalculateTimeService {
    * 
    * @param hour 
    * @param minutes 
-   * @return Twenty Percent of Time in seconds
+   * @return Eighty Percent of Time in seconds
    */
   public calculateEightyPercent(hour: number, minutes: number): number {
     return ((hour * this.oneHourInSeconds) + minutes) * this.eightyPercentHour;
